@@ -1,0 +1,105 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: -webkit-gradient(linear, left bottom, left top, from(#0F2027), color-stop(50.94%, #203A43), color-stop(98.85%, #2C5364)), -webkit-gradient(linear, left bottom, left top, from(#203A43), to(#203A43)), #2C5364;
+  background: linear-gradient(0deg, #0F2027 0%, #203A43 50.94%, #2C5364 98.85%), linear-gradient(0deg, #203A43, #203A43), #2C5364;
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.timer__block {
+  font-size: 122px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 410px;
+  margin: 0 auto;
+  margin-top: 40px;
+  gap: 0 85px;
+}
+.buttons .button {
+  cursor: pointer;
+  border: 8px solid #21414D;
+  background-color: transparent;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+.buttons .button:hover {
+  background-color: rgba(159, 36, 110, 0.498);
+  border: 8px solid #2C5364;
+}
+.buttons .start svg {
+  padding-left: 7px;
+}
+
+.phrase {
+  position: absolute;
+  bottom: 40px;
+  left: 80px;
+}
+.phrase p {
+  font-size: 17px;
+  letter-spacing: 0.15em;
+}/*# sourceMappingURL=main.css.map */

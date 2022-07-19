@@ -1,0 +1,76 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(0deg, #0F2027 0%, #203A43 50.94%, #2C5364 98.85%), linear-gradient(0deg, #203A43, #203A43), #2C5364;
+  height: 100vh;
+}
+.container {
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  &__block {
+    font-size: 122px;
+    display: flex;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 410px;
+  margin: 0 auto;
+  margin-top: 40px;
+  gap: 0 85px;
+  .button {
+    cursor: pointer;
+    border: 8px solid #21414D;
+    background-color: transparent;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in;
+    &:hover {
+      background-color: rgba(159, 36, 110, 0.498);
+      border: 8px solid #2C5364;
+    }
+  }
+  .start {
+    svg {
+      padding-left: 7px;
+    }
+  }
+}
+
+.phrase {
+  position: absolute;
+  bottom: 40px;
+  left: 80px;
+  p {
+    font-size: 17px;
+    letter-spacing: 0.15em;
+  }
+}
