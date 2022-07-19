@@ -8,6 +8,7 @@
 body, html {
   margin: 0;
   padding: 0;
+  font-variant-numeric: tabular-nums;
 }
 
 body {
@@ -31,6 +32,9 @@ body {
   &__block {
     font-size: 122px;
     display: flex;
+    @media (max-width: 720px) {
+      font-size: 60px;
+    }
   }
 }
 
@@ -42,6 +46,9 @@ body {
   margin: 0 auto;
   margin-top: 40px;
   gap: 0 85px;
+  @media (max-width: 720px) {
+    gap: 0 30px;
+  }
   .button {
     cursor: pointer;
     border: 8px solid #21414D;
@@ -53,6 +60,10 @@ body {
     justify-content: center;
     align-items: center;
     transition: 0.2s ease-in;
+    @media (max-width: 720px) {
+      height: 65px;
+      width: 65px;
+    }
     &:hover {
       background-color: rgba(159, 36, 110, 0.498);
       border: 8px solid #2C5364;
@@ -69,6 +80,9 @@ body {
   position: absolute;
   bottom: 40px;
   left: 80px;
+  @media (max-width: 720px) {
+    left: inherit;
+  }
   p {
     font-size: 17px;
     letter-spacing: 0.15em;

@@ -9,6 +9,7 @@
 body, html {
   margin: 0;
   padding: 0;
+  font-variant-numeric: tabular-nums;
 }
 
 body {
@@ -51,6 +52,11 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+@media (max-width: 720px) {
+  .timer__block {
+    font-size: 60px;
+  }
+}
 
 .buttons {
   display: -webkit-box;
@@ -66,6 +72,11 @@ body {
   margin: 0 auto;
   margin-top: 40px;
   gap: 0 85px;
+}
+@media (max-width: 720px) {
+  .buttons {
+    gap: 0 30px;
+  }
 }
 .buttons .button {
   cursor: pointer;
@@ -86,6 +97,12 @@ body {
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
+@media (max-width: 720px) {
+  .buttons .button {
+    height: 65px;
+    width: 65px;
+  }
+}
 .buttons .button:hover {
   background-color: rgba(159, 36, 110, 0.498);
   border: 8px solid #2C5364;
@@ -98,6 +115,11 @@ body {
   position: absolute;
   bottom: 40px;
   left: 80px;
+}
+@media (max-width: 720px) {
+  .phrase {
+    left: inherit;
+  }
 }
 .phrase p {
   font-size: 17px;
