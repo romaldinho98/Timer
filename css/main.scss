@@ -27,14 +27,9 @@ body {
 }
 
 .timer {
-  display: flex;
-  justify-content: center;
-  &__block {
-    font-size: 122px;
-    display: flex;
-    @media (max-width: 720px) {
-      font-size: 60px;
-    }
+  font-size: 122px;
+  @media (max-width: 720px) {
+    font-size: 60px;
   }
 }
 

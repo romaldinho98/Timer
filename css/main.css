@@ -39,21 +39,10 @@ body {
 }
 
 .timer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.timer__block {
   font-size: 122px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 @media (max-width: 720px) {
-  .timer__block {
+  .timer {
     font-size: 60px;
   }
 }
