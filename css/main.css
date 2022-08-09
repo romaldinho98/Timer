@@ -96,9 +96,6 @@ body {
   background-color: rgba(159, 36, 110, 0.498);
   border: 8px solid #2C5364;
 }
-.buttons .start svg {
-  padding-left: 7px;
-}
 
 .phrase {
   position: absolute;
